@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -30,10 +31,10 @@ public class SearchFeature {
 		driver.findElement(By.xpath("//div[@id='sbse0']")).click();
 		}
 	
-	/*@AfterClass
+	@AfterClass
 	public void tearDown() throws Exception {
 		System.out.println("Closing the browser");
 		Thread.sleep(5000);
 		driver.quit();
-	}*/
+	}
 }

@@ -22,7 +22,7 @@ public class SearchFeature {
 	}
 	    
 	@Test
-	public  void yoYo() {
+	public  void gSearch() {
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.get(url); 
 		WebElement element = driver.findElement(By.name("q"));
